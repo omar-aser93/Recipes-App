@@ -1,0 +1,127 @@
+.App {
+  
+  text-align: center;
+  width :80%;
+  margin: 20px auto;
+  background: rgba(223, 114, 208, 0.5);
+  padding: 15px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+
+
+/* form */
+
+.recipe_form{
+  margin: 20px 0;
+  display: flex;
+  padding:15px ;
+  justify-content: center;  
+  background:  rgb(238, 100, 146);
+  border-radius: 20px;
+  
+}
+
+.recipe_form .recipe_input{
+  margin: 0 20px; 
+  flex: 2;
+  padding: 10px;
+  color: rgb(238, 100, 146);  
+  outline: none;  
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.recipe_form .recipe_input:focus{
+  transform: scale(1.05,1.05);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.recipe_form .recipe_button {
+  margin: 0 40px;  
+  padding: 10px;  
+  outline: none;  
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right bottom , rgb(252, 154, 89) , #fff);
+  border-radius: 15px;
+  color: rgb(151, 28, 69);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.recipe_form .recipe_button:hover{
+  background: linear-gradient(to left bottom , rgb(238, 100, 146) , #fff);  
+  color: rgb(151, 28, 69);
+  transform: scale(1.1,1.1);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* recipe */
+
+.recipesList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+}
+
+.recpieDetail {
+  flex: 1;
+  width: 50%;
+  padding: 15px;
+  margin: 15px;
+  background:rgb(238, 100, 146) ;
+  border-radius: 15px;
+  height: 750px;  
+  max-height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.recpieDetail hr{
+  width: 80%;
+}
+.recpieDetail p{
+  color: rgb(60, 7, 110);
+  font-weight: 500;
+}
+
+.recpieDetail img{
+  overflow: hidden;
+ 
+}
+
+
+
+/*media query*/
+
+
+/*mobile phone */
+
+@media (max-width: 576px) { 
+ 
+  .recipe_form{
+    
+        flex-direction: column;
+  }
+  .recipe_form .recipe_input{
+    margin:  20px 0; 
+   
+  }
+  
+  .recpieDetail img{
+   max-width: 90%;
+  
+  }
+
+}
